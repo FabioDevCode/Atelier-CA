@@ -1,4 +1,4 @@
-const projects = [
+const projets = [
     {
     id: 1,
     title: "MAISON JE",
@@ -313,4 +313,4 @@ const projects = [
     }
 ];
 
-export { projects }
+export { projets }

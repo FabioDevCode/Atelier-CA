@@ -1,0 +1,466 @@
+.home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: calc(100% - 250px);
+    min-width: 320px;
+    overflow-x: hidden;
+    margin-left: 250px;
+}
+
+.slider {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 900%;
+    display: flex;
+    left: 0;
+    animation: sliderAuto 32s 2s ease-in infinite;
+}
+
+.slide {
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.slide img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes sliderAuto {
+    0% {
+        left: 0;
+    }
+    9% {
+        left: 0;
+    }
+    12.5% {
+        left: -100%;
+    }
+    21.5% {
+        left: -100%;
+    }
+    25% {
+        left: -200%;
+    }
+    34% {
+        left: -200%;
+    }
+    37.5% {
+        left: -300%;
+    }
+    46.5% {
+        left: -300%;
+    }
+    50% {
+        left: -400%;
+    }
+    59% {
+        left: -400%;
+    }
+    62.5% {
+        left: -500%;
+    }
+    71.5% {
+        left: -500%;
+    }
+    75% {
+        left: -600%;
+    }
+    84% {
+        left: -600%;
+    }
+    87.5% {
+        left: -700%;
+    }
+    96.5% {
+        left: -700%;
+    }
+    100% {
+        left: -800%;
+    }
+}
+
+/*-AGENCE-------------------------------------------*/
+
+.description {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 66px);
+    width: 90%;
+    padding-left: 300px;
+}
+
+.description section {
+    min-height: 35vh;
+    max-height: min-content;
+    min-width: 310px;
+}
+
+.description section h2, .description section h1 {
+    display: block;
+    width: max-content;
+    margin: 22px 0;
+    font-size: 3em;
+}
+
+.description section p {
+    display: block;
+    text-align: justify;
+    width: 95%;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+/*-AGENCE-------------------------------------------*/
+.agence {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 85%;
+    padding-left: 300px;
+}
+
+.agence section {
+    min-height: 35vh;
+    max-height: min-content;
+    min-width: 310px;
+}
+
+.agence section h2 {
+    display: block;
+    width: max-content;
+    margin: 22px 0;
+    font-size: 3em;
+}
+
+.agence section p {
+    display: block;
+    text-align: justify;
+    width: 95%;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.agence .employees {
+    height: auto;
+    width: 95%;
+    min-width: 480px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    margin-bottom: 20px;
+}
+
+.profil {
+    padding: 20px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    width: 220px;
+    min-width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(30, 30, 30, .1);
+    margin: 0 25px 15px 0;
+}
+
+.profil img {
+    height: 60%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 5px 1px rgba(30, 30, 30, .1);
+}
+
+.profil h3 {
+    margin: 10px 0;
+}
+
+.profil div {
+    width: 100%;
+}
+
+/*-PROJET-SCROLL------------------------------------------*/
+
+#projets {
+    position: relative;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    min-height: 94vh;
+    height: auto;
+    width: 100%;
+    padding-left: 300px;
+    background-color: white;
+}
+
+#projets h2 {
+    display: block;
+    width: max-content;
+    margin: 22px 0;
+    font-size: 3em;
+}
+
+.bloc-projet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: calc(97vw - 360px);
+    padding-bottom: 40px;
+}
+
+.projet {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px 12px 0;
+    border-radius: 5px;
+    height: 15vw;
+    min-height: 270px;
+    width: 24vw;
+    min-width: 450px;
+}
+
+.projet img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.projet a {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30, 30, 30, .7);
+    color: white;
+    font-weight: 500;
+    font-size: 2.2em;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    padding: 0 12px;
+}
+
+.projet a:hover {
+    opacity: 1;
+}
+
+/*-LE-PROJET------------------------------------*/
+
+#tri {
+    height: max-content;
+    width: calc(97vw - 360px);
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tri button {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    border: 1px solid #333333;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    height: max-content;
+    width: max-content;
+    min-width: max-content;
+    padding: 10px 15px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+#tri button:first-child {
+    background-color: #333333;
+    color: white;
+}
+
+#tri button:active {
+    background-color: #333333;
+    color: white;
+}
+
+.le-projet {
+    padding-left: 300px;
+    width: max-content;
+}
+
+main .le-projet h1 {
+    width: max-content;
+    padding-top: 22px;
+    margin-bottom: 22px;
+    font-size: 3em;
+}
+
+main .le-projet .bloc-projet-description {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25em;
+    height: max-content;
+}
+
+main .le-projet .bloc-projet-description .projet-info {
+    min-width: max-content;
+    height: max-content;
+    margin-right: 100px;
+}
+
+main .le-projet .bloc-projet-description .la-description {
+    width: max-content;
+    max-width: 600px;
+    height: 250px;
+    height: max-content;
+    text-align: justify;
+}
+
+main .le-projet .bloc-projet-description div p {
+    margin-bottom: 15px;
+}
+
+main .le-projet div p span {
+    font-weight: 600;
+}
+
+#main-projet {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-projet .bloc-img {
+    padding-left: 300px;
+    margin-top: 25px;
+}
+
+#main-projet .bloc-img img {
+    margin-bottom: 25px;
+    height: auto;
+    max-height: 90vh;
+    width: auto;
+    max-width: calc(75%);
+    object-fit: contain;
+    object-position: left;
+    box-shadow: 0 0 5px 3px rgba(30, 30, 30, .1);
+}
+
+#back, #tri button {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    border: 1px solid #333333;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    height: max-content;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 2px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back svg {
+    height: 16px;
+    margin-right: 5px;
+}
+
+#back:hover {
+    box-shadow: 1px 1px black;
+}
+
+#back:active {
+    box-shadow: none;
+}
+
+/*-CONTACT--------------------------------------*/
+
+#contact {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 66px);
+    height: max-content;
+    width: 100%;
+    padding-left: 300px;
+}
+
+#contact h2 {
+    display: block;
+    width: max-content;
+    margin: 22px 0;
+    font-size: 3em;
+}
+
+.bloc-info {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    padding-top: 35px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.info section {
+    margin: 35px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    height: 400px;
+    width: 40vw;
+    border: 0;
+}
+
+.info section p {
+    margin-bottom: 8px;
+}
+
+.info h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.bloc-svg {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info section .bloc-svg p {
+    line-height: 100%;
+    margin: 0px;
+}
+
+.bloc-svg svg {
+    height: 1.5em;
+    margin-right: 12px; 
+}

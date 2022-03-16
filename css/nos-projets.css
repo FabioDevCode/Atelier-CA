@@ -1,0 +1,105 @@
+#projets {
+    position: relative;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    min-height: 94vh;
+    height: auto;
+    width: 100%;
+    padding-left: 300px;
+    background-color: white;
+}
+
+#projets h2 {
+    display: block;
+    width: max-content;
+    margin: 22px 0;
+    font-size: 3em;
+}
+
+.bloc-projet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: calc(97vw - 360px);
+    padding-bottom: 40px;
+}
+
+.projet {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px 12px 0;
+    border-radius: 5px;
+    height: 15vw;
+    min-height: 270px;
+    width: 24vw;
+    min-width: 450px;
+}
+
+.projet img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.projet a {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30, 30, 30, .7);
+    color: white;
+    font-weight: 500;
+    font-size: 2.2em;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    padding: 0 12px;
+}
+
+.projet a:hover {
+    opacity: 1;
+}
+
+#tri {
+    height: max-content;
+    width: calc(97vw - 360px);
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tri button {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    border: 1px solid #333333;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    height: max-content;
+    width: max-content;
+    min-width: max-content;
+    padding: 10px 15px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+#tri button:first-child {
+    background-color: #333333;
+    color: white;
+}
+
+#tri button:active {
+    background-color: #333333;
+    color: white;
+}
