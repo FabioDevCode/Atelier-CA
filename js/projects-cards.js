@@ -5,7 +5,7 @@ showProjectCards()
 
 function showProjectCards() {
 
-    for (let i = 0; i <= projets.length; i++) {
+    for (let i = projets.length - 1; i >= 0; i--) {
 
         let card = document.createElement('div');
         card.classList.add("projet");
