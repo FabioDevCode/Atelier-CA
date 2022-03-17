@@ -1,7 +1,7 @@
 import { projets } from './data-projets.js';
 
 // Création de la page produit
-const main = document.querySelector('main')
+const main = document.querySelector('#main-projet');
 let idProject = parseInt(window.location.search.slice(1)) - 1;
 
 const titlePage = document.querySelector('title');
@@ -33,6 +33,19 @@ function createInfo() {
         RETOUR AUX PROJETS</button>
     `;
     main.appendChild(projetInfo)
+
+
+    const description = document.querySelector(".la-description");
+
+    if(!projets[idProject].description === undefined) {
+        let desc = document.createElement('p');
+        desc.innerHTML = `${projets[idProject].description}`;
+
+        description.appendChild(desc);
+    } else {
+        description.classList.add('none');
+    }
+
 }
 
 function crateGalerie() {
@@ -44,10 +57,9 @@ function crateGalerie() {
 
     for(let i = 0; i < gallery.length; i++) {
 
-        let img = `<img src="./assets/images/projets/${gallery[i]}.jpg" alt="photo n° ${i} du projet">`;
+        let img = `<img src="./assets/images/projects/${gallery[i]}.jpg" alt="photo n° ${i} du projet">`;
         textImg = textImg + img;
 
-        console.log(textImg)
     }
 
     projetGalerie.innerHTML = `${textImg}`;

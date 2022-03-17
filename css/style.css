@@ -464,3 +464,8 @@ iframe {
     height: 1.5em;
     margin-right: 12px; 
 }
+
+.none {
+    display: none;
+    visibility: hidden;
+}
