@@ -18,11 +18,12 @@
 }
 
 .bloc-projet {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: calc(97vw - 360px);
+    width: calc(110% - 360px);
     padding-bottom: 40px;
 }
 
@@ -32,9 +33,9 @@
     overflow: hidden;
     margin: 0 10px 12px 0;
     border-radius: 5px;
-    height: 15vw;
+    height: 270px;
     min-height: 270px;
-    width: 24vw;
+    width: 450px;
     min-width: 450px;
 }
 

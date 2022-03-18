@@ -97,7 +97,7 @@ const projets = [
     },
     {
     id: 9,
-    title: "RESTUCTURATION E EXTENSION EHPAD DE TREIGNAC",
+    title: "RESTRUCTURATION ET EXTENSION EHPAD DE TREIGNAC",
     lieu: "Treignac (19)",
     calendar: "Livré en 2009",
     moa: "Commune de Treignac",
@@ -229,7 +229,7 @@ const projets = [
     },
     {
     id: 20,
-    title: "CONSTRUCTION DE 22 LOGEMENTS COLLECTFIS",
+    title: "CONSTRUCTION DE 22 LOGEMENTS COLLECTIFS",
     lieu: "Brive-la-Gaillarde (19)",
     calendar: "Livré en 2018",
     moa: "Le Point Immobilier",

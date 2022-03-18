@@ -351,20 +351,22 @@ main .le-projet div p span {
 #main-projet .bloc-img {
     padding-left: 300px;
     margin-top: 25px;
+    padding-bottom: 35px;
 }
 
 #main-projet .bloc-img img {
     margin-bottom: 25px;
+    margin-right: 10px;
     height: auto;
     max-height: 90vh;
     width: auto;
     max-width: calc(75%);
     object-fit: contain;
     object-position: left;
-    box-shadow: 0 0 5px 3px rgba(30, 30, 30, .1);
+    /* box-shadow: 0 0 5px 3px rgba(30, 30, 30, .1); */
 }
 
-#back, #tri button {
+#back, #backBottom, #tri button {
     cursor: pointer;
     font-size: 1.2em;
     font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
@@ -381,16 +383,16 @@ main .le-projet div p span {
     align-items: center;
 }
 
-#back svg {
+#back svg, #backBottom svg {
     height: 16px;
     margin-right: 5px;
 }
 
-#back:hover {
+#back:hover, #backBottom:hover {
     box-shadow: 1px 1px black;
 }
 
-#back:active {
+#back:active, #backBottom:active {
     box-shadow: none;
 }
 
