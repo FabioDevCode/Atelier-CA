@@ -23,8 +23,9 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: calc(110% - 360px);
+    width: 100%;
     padding-bottom: 40px;
+
 }
 
 .projet {
@@ -33,9 +34,9 @@
     overflow: hidden;
     margin: 0 10px 12px 0;
     border-radius: 5px;
-    height: 270px;
+    max-height: 300px;
     min-height: 270px;
-    width: 450px;
+    width: 32%;
     min-width: 450px;
 }
 

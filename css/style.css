@@ -304,8 +304,10 @@
 }
 
 .le-projet {
-    padding-left: 300px;
+    padding-left: 500px;
+    padding-right: 50px;
     width: max-content;
+    max-width: 100vw;
 }
 
 main .le-projet h1 {
@@ -350,7 +352,7 @@ main .le-projet div p span {
 }
 
 #main-projet .bloc-img {
-    padding-left: 300px;
+    padding-left: 500px;
     margin-top: 25px;
     padding-bottom: 35px;
 }
@@ -361,7 +363,7 @@ main .le-projet div p span {
     height: auto;
     max-height: 90vh;
     width: auto;
-    max-width: calc(75%);
+    max-width: calc(85%);
     object-fit: contain;
     object-position: left;
     /* box-shadow: 0 0 5px 3px rgba(30, 30, 30, .1); */
@@ -369,7 +371,7 @@ main .le-projet div p span {
 
 #back, #backBottom, #tri button {
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
     border: 1px solid #333333;
     font-weight: 500;
