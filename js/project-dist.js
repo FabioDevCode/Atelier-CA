@@ -9,7 +9,7 @@ titlePage.innerHTML = `Projet - ${projets[idProject].title}`;
 
 createInfo()
 crateGalerie()
-addBtnVack()
+addBtnBack()
 
 function createInfo() {
     let projetInfo = document.createElement('section');
@@ -29,9 +29,10 @@ function createInfo() {
                 <p>${projets[idProject].description}</p>
             </div>
         </div>
-        <button id="back">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
-        RETOUR AUX PROJETS</button>
+        <a id="back" href="./nos-projets.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+            RETOUR AUX PROJETS
+        </a>
     `;
     main.appendChild(projetInfo)
 
@@ -67,24 +68,16 @@ function crateGalerie() {
     main.appendChild(projetGalerie);
 }
 
-function addBtnVack() {
+function addBtnBack() {
     const afterList = document.querySelector('.bloc-img')
-    const btnBack = document.createElement('button');
+    const btnBack = document.createElement('a');
     btnBack.id = "backBottom";
+    btnBack.setAttribute("href", "./nos-projets.html")
     btnBack.innerHTML = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"/>
+    </svg>
     RETOUR AUX PROJETS
     `;
 
     afterList.appendChild(btnBack);
 }
-
-const btnBack = document.querySelector('#back');
-btnBack.addEventListener('click', () => {
-    window.history.back();
-});
-
-const btnBackBottom = document.querySelector('#backBottom');
-btnBackBottom.addEventListener('click', () => {
-    window.history.back();
-});
