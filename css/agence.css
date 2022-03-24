@@ -69,33 +69,3 @@
 .profil div {
     width: 100%;
 }
-
-.description {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 66px);
-    width: 90%;
-    padding-left: 300px;
-}
-
-.description section {
-    min-height: 35vh;
-    max-height: min-content;
-    min-width: 310px;
-}
-
-.description section h2, .description section h1 {
-    display: block;
-    width: max-content;
-    margin: 22px 0;
-    font-size: 3em;
-}
-
-.description section p {
-    display: block;
-    text-align: justify;
-    width: 95%;
-    line-height: 1.5em;
-    margin-bottom: 25px;
-    font-size: 1.1em;
-}

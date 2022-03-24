@@ -1,0 +1,33 @@
+/*-PETIT-LAPTOP--GRANDE-TABLETTE-----------*/
+@media screen and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+}
+/*-TABLET-->>--SMARTPHONE------------------*/
+@media screen and (max-width: 768px) {
+
+
+
+
+
+
+
+
+}
+/*-SMARTPHONE-->>--TELEPHONE---------------*/
+@media screen and (max-width: 480px) {
+
+
+
+
+
+
+
+
+}

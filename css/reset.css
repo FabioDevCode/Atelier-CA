@@ -224,3 +224,24 @@ footer div a {
 .mentions a:hover, footer div a:hover {
     border-bottom: 1px solid rgb(255, 255, 255, .4);
 }
+
+/*-ELEMENT-RESPONSIVE--------------------------------------*/
+
+.btnMenu div {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    /* border: 2px solid black; */
+}
+
+.btnMenu div svg {
+    height: 25px;
+    width: 25px;
+}
