@@ -3,7 +3,7 @@
     height: max-content;
     display: flex;
     flex-direction: column;
-    min-height: 94vh;
+    min-height: calc(100vh - 69px);
     height: auto;
     width: 100%;
     padding-left: 300px;
@@ -25,7 +25,6 @@
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 40px;
-
 }
 
 .projet {
@@ -103,4 +102,49 @@
 #tri button:active {
     background-color: #333333;
     color: white;
+}
+
+#projects {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects a {
+    margin-bottom: 10px;
+}
+
+#projects button {
+    cursor: pointer;
+    background-color: transparent;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #333333;
+    font-size: 1em;
+    margin-left: 15px;
+    padding: 2px 7px;
+    border: none;
+}
+
+#projects button:hover, #projects button.active {
+    background-color: #140B6E;
+    color: white;
+}
+
+li:nth-child(3):hover {
+    font-size: 1.2em;
+}
+
+li:nth-child(3) a:hover {
+    font-size: 1.1em;
+}
+
+.none {
+    display: none;
+    visibility: hidden;
+}
+
+.active {
+    display: flex;
+    visibility: visible;
 }

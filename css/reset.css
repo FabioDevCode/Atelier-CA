@@ -225,6 +225,25 @@ footer div a {
     border-bottom: 1px solid rgb(255, 255, 255, .4);
 }
 
+.footerLinks {
+    width: 220px;
+    height: 100%;
+    max-height: 70px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLinks a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+}
+
 /*-ELEMENT-RESPONSIVE--------------------------------------*/
 
 .btnMenu div {
@@ -241,7 +260,7 @@ footer div a {
     /* border: 2px solid black; */
 }
 
-.btnMenu div svg {
+.btnMenu a {
     height: 25px;
     width: 25px;
 }
