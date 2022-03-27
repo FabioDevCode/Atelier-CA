@@ -4,8 +4,17 @@ const blocProject = document.querySelector('.bloc-projet');
 showProjectCards()
 sourtOutProject()
 
-const allProjetsBtn = document.querySelector('.so1');
-allProjetsBtn.click()
+
+const choiceSouted = `.${localStorage.getItem('btso')}`;
+
+if(!choiceSouted) {
+    const allProjetsBtn = document.querySelector('.so1');
+    allProjetsBtn.click();
+} else {
+    const allProjetsBtn = document.querySelector(`${choiceSouted}`);
+    allProjetsBtn.click();
+}
+
 
 function showProjectCards() {
 
@@ -28,7 +37,6 @@ function sourtOutProject() {
     const btnSourter = document.querySelectorAll('.sourt_out');
 
     btnSourter.forEach(btn => {
-
         btn.addEventListener('click', function() {
 
             btnSourter.forEach(btn => {
@@ -37,6 +45,8 @@ function sourtOutProject() {
             this.classList.add('active');
 
             const btnSourted = (Array.from(this.classList)).slice(1)[0];
+
+            localStorage.setItem('btso', btnSourted);
 
             displayCardProject(btnSourted)
         });

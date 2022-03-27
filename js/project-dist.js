@@ -10,6 +10,20 @@ titlePage.innerHTML = `Projet - ${projets[idProject].title}`;
 createInfo()
 crateGalerie()
 addBtnBack()
+saveChoice()
+
+
+const choiceSouted = `.${localStorage.getItem('btso')}`;
+
+if(!choiceSouted) {
+    const allProjetsBtn = document.querySelector('.so1');
+    allProjetsBtn.click()
+} else {
+    const allProjetsBtn = document.querySelector(`${choiceSouted}`);
+    allProjetsBtn.click()
+}
+
+
 
 function createInfo() {
     let projetInfo = document.createElement('section');
@@ -82,3 +96,28 @@ function addBtnBack() {
 
     afterList.appendChild(btnBack);
 }
+
+function saveChoice() {
+    const btnSourter = document.querySelectorAll('.sourt_out');
+    let nbOfClick = 0;
+
+    btnSourter.forEach(btn => {
+        btn.addEventListener('click', function() {
+
+            nbOfClick++
+
+            btnSourter.forEach(btn => {
+                btn.classList.remove('active');
+            })
+            this.classList.add('active');
+
+            const btnSourted = (Array.from(this.classList)).slice(1)[0];
+
+            localStorage.setItem('btso', btnSourted);
+
+            if(nbOfClick >=2) {
+                history.back();
+            }
+        });
+    });
+};
