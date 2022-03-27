@@ -4,16 +4,9 @@ const blocProject = document.querySelector('.bloc-projet');
 showProjectCards()
 sourtOutProject()
 
-
 const choiceSouted = `.${localStorage.getItem('btso')}`;
-
-if(!choiceSouted) {
-    const allProjetsBtn = document.querySelector('.so1');
-    allProjetsBtn.click();
-} else {
-    const allProjetsBtn = document.querySelector(`${choiceSouted}`);
-    allProjetsBtn.click();
-}
+const allProjetsBtn = document.querySelector(`${choiceSouted}`);
+allProjetsBtn.click();
 
 
 function showProjectCards() {
