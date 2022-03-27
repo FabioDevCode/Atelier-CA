@@ -129,7 +129,47 @@ main .le-projet div p span {
     box-shadow: none;
 }
 
+#projects {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects a {
+    margin-bottom: 10px;
+}
+
+#projects button {
+    cursor: pointer;
+    background-color: transparent;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #333333;
+    font-size: 1em;
+    margin-left: 15px;
+    padding: 2px 7px;
+    border: none;
+}
+
+#projects button:hover, #projects button.active {
+    background-color: #140B6E;
+    color: white;
+}
+
+li:nth-child(3):hover {
+    font-size: 1.2em;
+}
+
+li:nth-child(3) a:hover {
+    font-size: 1.1em;
+}
+
 .none {
     display: none;
     visibility: hidden;
+}
+
+.active {
+    display: flex;
+    visibility: visible;
 }
