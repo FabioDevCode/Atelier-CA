@@ -108,7 +108,7 @@ function saveChoice() {
             localStorage.setItem('btso', btnSourted);
 
             if(nbOfClick >=2) {
-                history.back();
+                location.href = '/nos-projets.html';
             }
         });
     });
