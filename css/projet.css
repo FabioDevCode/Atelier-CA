@@ -1,66 +1,28 @@
-/* #tri {
-    height: max-content;
-    width: calc(97vw - 360px);
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#tri button {
-    cursor: pointer;
-    font-size: 1.2em;
-    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
-    border: 1px solid #333333;
-    font-weight: 500;
-    background-color: #FFFFFF;
-    height: max-content;
-    width: max-content;
-    min-width: max-content;
-    padding: 10px 15px;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 12px;
-}
-
-#tri button:first-child {
-    background-color: #333333;
-    color: white;
-}
-
-#tri button:active {
-    background-color: #333333;
-    color: white;
-} */
-
 .le-projet {
-    padding-left: 500px;
-    padding-right: 50px;
     width: 100%;
 }
 
-main .le-projet h1 {
+div .le-projet h1 {
     width: auto;
     padding-top: 22px;
     margin-bottom: 22px;
     font-size: 3em;
 }
 
-main .le-projet .bloc-projet-description {
+div .le-projet .bloc-projet-description {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.25em;
     height: max-content;
 }
 
-main .le-projet .bloc-projet-description .projet-info {
+div .le-projet .bloc-projet-description .projet-info {
     width: auto;
     height: max-content;
     margin-right: 100px;
 }
 
-main .le-projet .bloc-projet-description .la-description {
+div .le-projet .bloc-projet-description .la-description {
     width: max-content;
     max-width: 600px;
     height: 250px;
@@ -68,35 +30,40 @@ main .le-projet .bloc-projet-description .la-description {
     text-align: justify;
 }
 
-main .le-projet .bloc-projet-description div p {
-    margin-bottom: 15px;
+div .le-projet .bloc-projet-description div p {
+    margin-bottom: 5px;
 }
 
-main .le-projet div p span {
+div .le-projet .bloc-projet-description div p:last-child {
+    margin-bottom: 25px;
+}
+
+div .le-projet div p span {
     font-weight: 600;
 }
 
 #main-projet {
     display: flex;
     flex-direction: column;
+    width: 77%;
+    margin: 0 auto;
 }
 
 #main-projet .bloc-img {
-    padding-left: 500px;
-    margin-top: 25px;
-    padding-bottom: 35px;
+    margin-top: 35px;
+    padding-bottom: 45px;
 }
 
 #main-projet .bloc-img img {
     margin-bottom: 25px;
     margin-right: 10px;
+    margin: ;
     height: auto;
     max-height: 90vh;
     width: auto;
-    max-width: calc(85%);
+    max-width: calc(100%);
     object-fit: contain;
-    object-position: left;
-    /* box-shadow: 0 0 5px 3px rgba(30, 30, 30, .1); */
+    object-position: center;
 }
 
 #back, #backBottom, #tri button {
