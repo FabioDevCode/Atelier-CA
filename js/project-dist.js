@@ -97,6 +97,7 @@ function saveChoice() {
         btn.addEventListener('click', function() {
 
             nbOfClick++
+            console.log(window.location);
 
             btnSourter.forEach(btn => {
                 btn.classList.remove('active');
@@ -108,7 +109,7 @@ function saveChoice() {
             localStorage.setItem('btso', btnSourted);
 
             if(nbOfClick >=2) {
-                location.href = '/nos-projets.html';
+                window.location.href = `${location.origin}/nos-projets.html`;
             }
         });
     });

@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@font-face {
+    font-family: 'PT Sans Narrow Bold';
+    src: url('../assets/fonts/ptsansnarrow-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ptsansnarrow-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../assets/fonts/ptsansnarrow-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ptsansnarrow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *, ::after, ::before, button {
     box-sizing: border-box;
