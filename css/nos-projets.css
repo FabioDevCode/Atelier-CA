@@ -5,9 +5,9 @@
     flex-direction: column;
     min-height: calc(100vh - 69px);
     height: auto;
-    width: 100%;
-    padding-left: 300px;
-    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 35px;
 }
 
 #projets h2 {
@@ -24,14 +24,14 @@
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
 
 .projet {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin: 0 10px 12px 0;
+    margin: 5px 10px 5px 0px;
     border-radius: 5px;
     height: 300px;
     width: 32%;
@@ -67,7 +67,7 @@
     opacity: 1;
 }
 
-#tri {
+/* #tri {
     height: max-content;
     width: calc(97vw - 360px);
     margin-bottom: 40px;
@@ -102,7 +102,7 @@
 #tri button:active {
     background-color: #333333;
     color: white;
-}
+} */
 
 #projects {
     height: max-content;
