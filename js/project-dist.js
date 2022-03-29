@@ -109,7 +109,7 @@ function saveChoice() {
             localStorage.setItem('btso', btnSourted);
 
             if(nbOfClick >=2) {
-                window.location.href = `${location.origin}/nos-projets.html`;
+                window.location.href = `${location.origin}/Atelier-CA/nos-projets.html`;
             }
         });
     });
