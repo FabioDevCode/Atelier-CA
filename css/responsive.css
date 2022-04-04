@@ -1,12 +1,59 @@
 /*-PETIT-LAPTOP--GRANDE-TABLETTE-----------*/
 @media screen and (max-width: 1024px) {
+    header {
+        left: -168px;
+    }
 
+    .logo {
+        width: 84px;
+        margin: 0 0 20px 143px;
+    }
 
+    header div .logo img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        width: 60px;
+    }
 
+    #projects {
+        height: 30px;
+    }
 
+    .btnMenu {
+        display: flex;
+    }
 
+    nav {
+        margin-top: 180px;
+    }
 
+    .oda {
+        display: none;
+        visibility: hidden;
+    }
 
+    main {
+        padding-left: 84px;
+    }
+
+    .agence, #contact, #mentions {
+        width: 95%;
+    }
+
+    .projet {
+        height: 280px;
+        min-width: 410px;
+    }
+
+    button.sourt_out {
+        display: none;
+        visibility: hidden;
+    }
+
+    footer {
+        padding: 0 20px 0 104px;
+    }
 
 }
 /*-TABLET-->>--SMARTPHONE------------------*/

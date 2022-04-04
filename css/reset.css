@@ -87,6 +87,7 @@ header {
     overflow: auto;
     font-size: 1.05em;
     font-weight: 400;
+    transition: 400ms;
 }
 
 header .reseaux {
@@ -209,6 +210,16 @@ main {
     padding-left: 252px;
 }
 
+.croix, .textfermer {
+    display: none;
+}
+
+.barre, .croix, .textmenu, .textfermer, .btnMenuSvg {
+    transition: 400ms;
+}
+
+
+
 /*-FOOTER--------------------------------------*/
 
 footer {
@@ -259,22 +270,35 @@ footer div a {
 }
 
 /*-ELEMENT-RESPONSIVE--------------------------------------*/
-
-.btnMenu div {
+.btnMenu {
     cursor: pointer;
+    background-color: transparent;
     position: absolute;
-    right: 15px;
+    right: 8px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+}
+
+.btnMenu div.btnMenuSvg {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: lightgrey;
-    /* border: 2px solid black; */
+    height: 34px;
+    width: 34px;
+    margin-bottom: 5px;
 }
 
-.btnMenu a {
-    height: 25px;
-    width: 25px;
+.croix, .barre {
+    height: 100%;
+    width: 100%;
+}
+
+.btnMenu div.btnMenuText {
+    font-weight: 600;
+    font-size: 15px;
 }
