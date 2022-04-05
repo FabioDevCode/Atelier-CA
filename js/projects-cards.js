@@ -4,6 +4,11 @@ const blocProject = document.querySelector('.bloc-projet');
 showProjectCards()
 sourtOutProject()
 
+if(window.innerWidth <= 1024) {
+    const btnProject = document.getElementById('projects');
+    btnProject.innerHTML = '<a href="./nos-projets.html">Projets</a>';
+}
+
 const choiceSouted = `.${localStorage.getItem('btso')}`;
 const allProjetsBtn = document.querySelector(`${choiceSouted}`);
 allProjetsBtn.click();

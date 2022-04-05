@@ -19,11 +19,8 @@ console.log()
 btnMenu.addEventListener('click', function() {
     btnMenu.classList.toggle('active');
 
-    let arrayClass = btnMenu.classList;
-    console.log(arrayClass);
-
     if(btnMenu.classList[1]) {
-        header.style.left = '0px';
+        header.style.left = '-84px';
         svgBtn.style.tranform = 'rotate(720deg)';
         svgBarre.style.display = "none";
         svgCroix.style.display = "flex";

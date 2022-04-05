@@ -11,12 +11,15 @@
         width: 48%;
         min-width: 280px;
     }
-
 }
 /*-PETIT-LAPTOP--GRANDE-TABLETTE-----------*/
 @media screen and (max-width: 1024px) {
     header {
         left: -168px;
+    }
+
+    li {
+        margin-left: 84px;
     }
 
     .logo {
@@ -66,7 +69,7 @@
         width: 48%;
     }
 
-    #projects button.sourt_out {
+    #projects button {
         display: none;
         visibility: hidden;
     }
