@@ -79,7 +79,7 @@
     cursor: pointer;
     font-size: 1em;
     font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
-    border: 1px solid #333333;
+    border: 1px solid #140B6E;
     font-weight: 500;
     background-color: #FFFFFF;
     height: max-content;
@@ -90,8 +90,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 12px;
-    margin-bottom: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 #tri button:active {

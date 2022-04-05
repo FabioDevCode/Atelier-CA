@@ -34,7 +34,6 @@
     width: 100%;
     min-width: 480px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: flex-start;
     flex-wrap: wrap;
     flex-shrink: 1;
