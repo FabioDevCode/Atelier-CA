@@ -67,17 +67,17 @@
     opacity: 1;
 }
 
-/* #tri {
+#tri {
     height: max-content;
-    width: calc(97vw - 360px);
-    margin-bottom: 40px;
-    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    display: none;
     flex-wrap: wrap;
 }
 
 #tri button {
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
     border: 1px solid #333333;
     font-weight: 500;
@@ -85,7 +85,7 @@
     height: max-content;
     width: max-content;
     min-width: max-content;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 2px;
     display: flex;
     justify-content: center;
@@ -94,15 +94,15 @@
     margin-bottom: 12px;
 }
 
-#tri button:first-child {
+#tri button:active {
     background-color: #333333;
     color: white;
 }
 
-#tri button:active {
-    background-color: #333333;
+#tri button:hover, #tri button.active {
+    background-color: #140B6E;
     color: white;
-} */
+}
 
 #projects {
     height: max-content;

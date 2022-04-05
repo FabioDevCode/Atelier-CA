@@ -1,3 +1,18 @@
+@media screen and (max-width: 1720px) {
+    .projet {
+        height: 350px;
+        width: 48%;
+    }
+
+}
+@media screen and (max-width: 1300px) {
+    .projet {
+        height: 280px;
+        width: 48%;
+        min-width: 280px;
+    }
+
+}
 /*-PETIT-LAPTOP--GRANDE-TABLETTE-----------*/
 @media screen and (max-width: 1024px) {
     header {
@@ -41,12 +56,17 @@
         width: 95%;
     }
 
-    .projet {
-        height: 280px;
-        min-width: 410px;
+    #tri {
+        display: flex;
     }
 
-    button.sourt_out {
+    .projet {
+        height: 280px;
+        min-width: 300px;
+        width: 48%;
+    }
+
+    #projects button.sourt_out {
         display: none;
         visibility: hidden;
     }
@@ -58,18 +78,27 @@
 }
 /*-TABLET-->>--SMARTPHONE------------------*/
 @media screen and (max-width: 768px) {
-
-
-
-
-
-
-
-
+    .projet {
+        height: 200px;
+        min-width: 250px;
+    }
 }
+@media screen and (max-width: 650px) {
+    .projet {
+        height: 260px;
+        min-width: 300px;
+        width: 100%;
+    }
+}
+
+
 /*-SMARTPHONE-->>--TELEPHONE---------------*/
 @media screen and (max-width: 480px) {
-
+    .projet {
+        height: 200px;
+        min-width: 300px;
+        width: 100%;
+    }
 
 
 
