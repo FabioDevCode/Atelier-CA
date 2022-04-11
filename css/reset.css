@@ -29,6 +29,7 @@ ul, ol, a {
 body {
     position: relative;
     max-width: 1920px;
+    min-width: 320px;
     margin: 0 auto;
     font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
     color: rgb(30,30,30);
@@ -38,7 +39,6 @@ body {
     scroll-snap-type: y mandatory;
     border-left: 1px solid rgba(30, 30, 30, .2);
     border-right: 1px solid rgba(30, 30, 30, .2);
-
 }
 
 /*Scrollbar----------------------------------*/

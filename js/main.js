@@ -100,9 +100,11 @@ if(window.innerWidth <= '768') {
 
         if((Array.from(this.classList)).slice(1)[0]) {
             cruxBtn.style.right = '0px';
+            cruxBtn.style.width = '100vw';
             console.log("c'est ouvert");
         } else {
             cruxBtn.style.right = '-100vw';
+            cruxBtn.style.width = '0px';
             console.log("C'est fermé");
         };
     });
@@ -128,9 +130,11 @@ if(window.innerWidth <= '768') {
 
         if((Array.from(this.classList)).slice(1)[0]) {
             cruxBtn.style.right = '0px';
+            cruxBtn.style.width = '100vw';
             console.log("c'est ouvert");
         } else {
             cruxBtn.style.right = '-100vw';
+            cruxBtn.style.width = '0px';
             console.log("C'est fermé");
         };
     });
