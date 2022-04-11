@@ -99,13 +99,13 @@ if(window.innerWidth <= '768') {
         }
 
         if((Array.from(this.classList)).slice(1)[0]) {
+            cruxBtn.classList.add('none')
             cruxBtn.style.right = '0px';
-            cruxBtn.style.width = '100vw';
-            console.log("c'est ouvert");
+            cruxBtn.style.width = '100%';
         } else {
-            cruxBtn.style.right = '-100vw';
+            cruxBtn.style.right = '-100%';
             cruxBtn.style.width = '0px';
-            console.log("C'est fermé");
+            cruxBtn.classList.remove('none');
         };
     });
 
@@ -129,13 +129,13 @@ if(window.innerWidth <= '768') {
         }
 
         if((Array.from(this.classList)).slice(1)[0]) {
+            cruxBtn.classList.add('none')
             cruxBtn.style.right = '0px';
-            cruxBtn.style.width = '100vw';
-            console.log("c'est ouvert");
+            cruxBtn.style.width = '100%';
         } else {
-            cruxBtn.style.right = '-100vw';
+            cruxBtn.style.right = '-100%';
             cruxBtn.style.width = '0px';
-            console.log("C'est fermé");
+            cruxBtn.classList.remove('none');
         };
     });
 }
