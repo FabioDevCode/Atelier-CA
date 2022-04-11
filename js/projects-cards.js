@@ -1,16 +1,17 @@
 import { projets } from './data-projets.js';
 const blocProject = document.querySelector('.bloc-projet');
 
-showProjectCards()
-sourtOutProject()
-
 if(window.innerWidth <= 1024) {
     const btnProject = document.getElementById('projects');
     btnProject.innerHTML = '<a href="./nos-projets.html">Projets</a>';
 }
 
-const choiceSouted = `.${localStorage.getItem('btso')}`;
-const allProjetsBtn = document.querySelector(`${choiceSouted}`);
+const choiceSourted = `.${localStorage.getItem('btso')}`;
+const allProjetsBtn = document.querySelector(`${choiceSourted}`);
+
+showProjectCards()
+sourtOutProject()
+
 allProjetsBtn.click();
 
 
@@ -43,6 +44,7 @@ function sourtOutProject() {
             this.classList.add('active');
 
             const btnSourted = (Array.from(this.classList)).slice(1)[0];
+            console.log(btnSourted);
 
             localStorage.setItem('btso', btnSourted);
 

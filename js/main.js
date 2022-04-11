@@ -3,18 +3,13 @@ if(!localStorage.getItem('btso')) {
 };
 
 const btnMenu = document.querySelector('.btnMenu');
-
 const svgBtn = document.querySelector('.btnMenuSvg');
 const svgBarre = document.querySelector('.barre');
 const svgCroix = document.querySelector('.croix');
-
 const MenuText = document.querySelector('.textmenu');
 const FermerText = document.querySelector('.textfermer');
-
 const header = document.querySelector('header');
 const divLogo = document.queryCommandValue('.logo');
-
-console.log()
 
 btnMenu.addEventListener('click', function() {
     btnMenu.classList.toggle('active');
