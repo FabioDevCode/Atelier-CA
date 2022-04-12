@@ -15,6 +15,7 @@ const main = document.querySelector('main');
 if(window.innerWidth >= '769') {
     const cruxBtn = document.createElement('div');
     cruxBtn.classList.add('crux');
+    cruxBtn.classList.add('none');
     main.appendChild(cruxBtn)
 
     btnMenu.addEventListener('click', function() {
@@ -37,9 +38,11 @@ if(window.innerWidth >= '769') {
         }
 
         if((Array.from(this.classList)).slice(1)[0]) {
-            cruxBtn.style.right = '0px';
+            cruxBtn.classList.remove('none');
+            cruxBtn.style.opacity = '1';
         } else {
-            cruxBtn.style.right = '-100vw';
+            cruxBtn.style.opacity = '0';
+            cruxBtn.classList.add('none');
         };
     });
 
@@ -63,21 +66,21 @@ if(window.innerWidth >= '769') {
         }
 
         if((Array.from(this.classList)).slice(1)[0]) {
-            cruxBtn.style.right = '0px';
+            cruxBtn.classList.remove('none');
+            cruxBtn.style.opacity = '1';
         } else {
-            cruxBtn.style.right = '-100vw';
+            cruxBtn.style.opacity = '0';
+            cruxBtn.classList.add('none');
         };
     });
 }
 
 if(window.innerWidth <= '768') {
-
     btnMenu.addEventListener('click', function() {
         btnMenu.classList.toggle('active');
 
         if(btnMenu.classList[1]) {
             header.style.height = '100vh';
-            svgBtn.style.tranform = 'rotate(720deg)';
             svgBarre.style.display = "none";
             svgCroix.style.display = "flex";
             MenuText.style.display = "none";
@@ -85,7 +88,6 @@ if(window.innerWidth <= '768') {
             nonScroll()
         } else {
             header.style.height = '70px';
-            svgBtn.style.tranform = 'rotate(-720deg)';
             svgBarre.style.display = "flex";
             svgCroix.style.display = "none";
             MenuText.style.display = "flex";

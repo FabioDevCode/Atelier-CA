@@ -198,12 +198,22 @@
         margin: 0;
     }
 
+    .menu li {
+
+    }
+
     .menu li a {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
         width: 100%;
+
+    }
+
+    .menu li a:active,  .menu li:active {
+        background-color: #140B6E;
+        color: white;
     }
 
     #projects a {
@@ -305,6 +315,14 @@
 
     .projet a {
         font-size: 1.4em;
+    }
+
+    main section h2 {
+        font-size: 1.6em;
+    }
+
+    .description section h1 {
+        font-size: 2.6em;
     }
 
 }
