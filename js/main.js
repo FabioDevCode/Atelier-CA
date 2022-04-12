@@ -38,10 +38,8 @@ if(window.innerWidth >= '769') {
 
         if((Array.from(this.classList)).slice(1)[0]) {
             cruxBtn.style.right = '0px';
-            console.log("c'est ouvert");
         } else {
             cruxBtn.style.right = '-100vw';
-            console.log("C'est fermé");
         };
     });
 
@@ -66,24 +64,19 @@ if(window.innerWidth >= '769') {
 
         if((Array.from(this.classList)).slice(1)[0]) {
             cruxBtn.style.right = '0px';
-            console.log("c'est ouvert");
         } else {
             cruxBtn.style.right = '-100vw';
-            console.log("C'est fermé");
         };
     });
 }
 
 if(window.innerWidth <= '768') {
-    const cruxBtn = document.createElement('div');
-    cruxBtn.classList.add('crux');
-    main.appendChild(cruxBtn)
 
     btnMenu.addEventListener('click', function() {
         btnMenu.classList.toggle('active');
 
         if(btnMenu.classList[1]) {
-            header.style.height = 'max-content';
+            header.style.height = '100vh';
             svgBtn.style.tranform = 'rotate(720deg)';
             svgBarre.style.display = "none";
             svgCroix.style.display = "flex";
@@ -97,45 +90,5 @@ if(window.innerWidth <= '768') {
             MenuText.style.display = "flex";
             FermerText.style.display = "none";
         }
-
-        if((Array.from(this.classList)).slice(1)[0]) {
-            cruxBtn.classList.add('none')
-            cruxBtn.style.right = '0px';
-            cruxBtn.style.width = '100%';
-        } else {
-            cruxBtn.style.right = '-100%';
-            cruxBtn.style.width = '0px';
-            cruxBtn.classList.remove('none');
-        };
-    });
-
-    cruxBtn.addEventListener('click', function() {
-        btnMenu.classList.toggle('active');
-
-        if(btnMenu.classList[1]) {
-            header.style.height = 'max-content';
-            svgBtn.style.tranform = 'rotate(720deg)';
-            svgBarre.style.display = "none";
-            svgCroix.style.display = "flex";
-            MenuText.style.display = "none";
-            FermerText.style.display = "flex";
-        } else {
-            header.style.height = '70px';
-            svgBtn.style.tranform = 'rotate(-720deg)';
-            svgBarre.style.display = "flex";
-            svgCroix.style.display = "none";
-            MenuText.style.display = "flex";
-            FermerText.style.display = "none";
-        }
-
-        if((Array.from(this.classList)).slice(1)[0]) {
-            cruxBtn.classList.add('none')
-            cruxBtn.style.right = '0px';
-            cruxBtn.style.width = '100%';
-        } else {
-            cruxBtn.style.right = '-100%';
-            cruxBtn.style.width = '0px';
-            cruxBtn.classList.remove('none');
-        };
     });
 }

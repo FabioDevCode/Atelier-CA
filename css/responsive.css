@@ -78,8 +78,33 @@
         padding: 0 20px 0 104px;
     }
 
+    .agence .employees {
+        min-width: 310px;
+    }
+
+    .profil {
+        margin: 0 5px 15px 0;
+    }
 }
 /*-TABLET-->>--SMARTPHONE------------------*/
+@media screen and (max-width: 857px) {
+
+    .profil {
+        padding: 10px;
+        overflow: hidden;
+        width: 100%;
+        min-width: 312px;
+        height: 210px;
+        margin: 0 0px 15px 0;
+    }
+
+    .profil img {
+        height: 170px;
+        margin-right: 15px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     main {
         padding-left: 0px;
@@ -226,15 +251,25 @@
     }
 
     #contact h2 {
-        display: block;
-        width: max-content;
-        margin: 10px 0;
-        font-size: 3em;
+        margin: 22px 0;
+        font-size: 2em;
     }
 
     .bloc-info {
         padding-top: 0px;
         flex-direction: column;
+    }
+
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 310px;
+        height: max-content;
+    }
+
+    .info section {
+        margin: 25px 0;
     }
 
     iframe {
@@ -251,6 +286,19 @@
         background-color: rgba(30, 30, 30, .4);
         transition: 150ms;
     }
+
+    div .le-projet h1, #projets h2, .agence section h2, #mentions h1 {
+        font-size: 2em;
+    }
+
+    #main-projet {
+        width: 95%;
+    }
+
+    .projet a {
+        font-size: 1.4em;
+    }
+
 }
 
 @media screen and (max-width: 650px) {

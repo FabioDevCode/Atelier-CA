@@ -44,11 +44,8 @@
     padding: 20px;
     background-color: whitesmoke;
     overflow: hidden;
-    /* width: 220px; */
     width: 30%;
-    /* min-width: 200px; */
     min-width: 358px;
-    /* height: 350px; */
     height: 220px;
     display: flex;
     flex-direction: row;
