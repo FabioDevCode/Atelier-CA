@@ -22,6 +22,7 @@
 @media screen and (max-width: 1024px) {
     header {
         left: -168px;
+        overflow-x: hidden;
     }
 
     li {
@@ -180,7 +181,6 @@
         position: fixed;
         width: 100%;
         height: 70px;
-        min-height: max-content;
         left: 0px;
         overflow: hidden;
         padding: 0 5px 25px 0;
@@ -193,6 +193,7 @@
         font-size: 1.05em;
         font-weight: 400;
         transition: 400ms;
+        overflow-x: hidden;
     }
 
     nav {

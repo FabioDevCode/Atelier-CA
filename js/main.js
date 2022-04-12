@@ -3,7 +3,6 @@ if(!localStorage.getItem('btso')) {
 };
 
 const btnMenu = document.querySelector('.btnMenu');
-const svgBtn = document.querySelector('.btnMenuSvg');
 const svgBarre = document.querySelector('.barre');
 const svgCroix = document.querySelector('.croix');
 const MenuText = document.querySelector('.textmenu');
@@ -23,14 +22,14 @@ if(window.innerWidth >= '769') {
 
         if(btnMenu.classList[1]) {
             header.style.left = '-84px';
-            svgBtn.style.tranform = 'rotate(720deg)';
+            header.style.overflowY = 'scroll';
             svgBarre.style.display = "none";
             svgCroix.style.display = "flex";
             MenuText.style.display = "none";
             FermerText.style.display = "flex";
         } else {
             header.style.left = '-168px';
-            svgBtn.style.tranform = 'rotate(-720deg)';
+            header.style.overflowY = 'hidden';
             svgBarre.style.display = "flex";
             svgCroix.style.display = "none";
             MenuText.style.display = "flex";
@@ -51,14 +50,14 @@ if(window.innerWidth >= '769') {
 
         if(btnMenu.classList[1]) {
             header.style.left = '-84px';
-            svgBtn.style.tranform = 'rotate(720deg)';
+            header.style.overflowY = 'scroll';
             svgBarre.style.display = "none";
             svgCroix.style.display = "flex";
             MenuText.style.display = "none";
             FermerText.style.display = "flex";
         } else {
             header.style.left = '-168px';
-            svgBtn.style.tranform = 'rotate(-720deg)';
+            header.style.overflowY = 'hidden';
             svgBarre.style.display = "flex";
             svgCroix.style.display = "none";
             MenuText.style.display = "flex";
@@ -81,16 +80,20 @@ if(window.innerWidth <= '768') {
 
         if(btnMenu.classList[1]) {
             header.style.height = '100%';
+            header.style.overflowY = 'scroll';
             svgBarre.style.display = "none";
             svgCroix.style.display = "flex";
             MenuText.style.display = "none";
             FermerText.style.display = "flex";
+            nonScroll()
         } else {
             header.style.height = '70px';
+            header.style.overflowY = 'hidden';
             svgBarre.style.display = "flex";
             svgCroix.style.display = "none";
             MenuText.style.display = "flex";
             FermerText.style.display = "none";
+            ouiScroll()
         }
     });
 }
