@@ -80,19 +80,17 @@ if(window.innerWidth <= '768') {
         btnMenu.classList.toggle('active');
 
         if(btnMenu.classList[1]) {
-            header.style.height = '100vh';
+            header.style.height = '100%';
             svgBarre.style.display = "none";
             svgCroix.style.display = "flex";
             MenuText.style.display = "none";
             FermerText.style.display = "flex";
-            nonScroll()
         } else {
             header.style.height = '70px';
             svgBarre.style.display = "flex";
             svgCroix.style.display = "none";
             MenuText.style.display = "flex";
             FermerText.style.display = "none";
-            ouiScroll()
         }
     });
 }
@@ -104,7 +102,6 @@ function nonScroll() {
         window.scrollTo(scrollGauche, scrollHaut);
     };
 }
-
 function ouiScroll() {
     window.onscroll = function() {};
 }
