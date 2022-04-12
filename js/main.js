@@ -82,6 +82,7 @@ if(window.innerWidth <= '768') {
             svgCroix.style.display = "flex";
             MenuText.style.display = "none";
             FermerText.style.display = "flex";
+            nonScroll()
         } else {
             header.style.height = '70px';
             svgBtn.style.tranform = 'rotate(-720deg)';
@@ -89,6 +90,19 @@ if(window.innerWidth <= '768') {
             svgCroix.style.display = "none";
             MenuText.style.display = "flex";
             FermerText.style.display = "none";
+            ouiScroll()
         }
     });
+}
+
+function nonScroll() {
+    scrollHaut = window.pageYOffset;
+    scrollGauche = window.pageXOffset;
+    window.onscroll = function() {
+        window.scrollTo(scrollGauche, scrollHaut);
+    };
+}
+
+function ouiScroll() {
+    window.onscroll = function() {};
 }
