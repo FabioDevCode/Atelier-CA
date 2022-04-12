@@ -218,10 +218,9 @@
         justify-content: center;
         height: 100%;
         width: 100%;
-
     }
 
-    .menu li a:active,  .menu li:active {
+    .menu li:active {
         background-color: #140B6E;
         color: white;
     }
