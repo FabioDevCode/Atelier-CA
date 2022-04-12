@@ -3,13 +3,19 @@
         height: 350px;
         width: 48%;
     }
-
 }
 @media screen and (max-width: 1300px) {
     .projet {
         height: 280px;
         width: 48%;
         min-width: 280px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .projet a:hover {
+        opacity: 1;
     }
 }
 /*-PETIT-LAPTOP--GRANDE-TABLETTE-----------*/
@@ -84,6 +90,10 @@
 
     .profil {
         margin: 0 5px 15px 0;
+    }
+
+    .projet a:active {
+        opacity: 1;
     }
 }
 /*-TABLET-->>--SMARTPHONE------------------*/
@@ -298,7 +308,6 @@
         cursor: pointer;
         position: absolute;
         top: 0;
-        right: -100%;
         height: 100%;
         width: 100%;
         background-color: rgba(30, 30, 30, .4);

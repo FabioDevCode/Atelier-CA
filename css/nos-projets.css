@@ -63,10 +63,6 @@
     padding: 0 12px;
 }
 
-.projet a:hover {
-    opacity: 1;
-}
-
 #tri {
     height: max-content;
     width: 100%;
@@ -92,11 +88,6 @@
     align-items: center;
     margin-right: 8px;
     margin-bottom: 8px;
-}
-
-#tri button:active {
-    background-color: #333333;
-    color: white;
 }
 
 #tri button:hover, #tri button.active {
