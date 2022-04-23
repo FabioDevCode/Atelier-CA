@@ -1,6 +1,27 @@
 if(!localStorage.getItem('btso')) {
     localStorage.setItem('btso', 'so1');
 };
+if(!localStorage.getItem('ordi')) {
+    if(window.innerWidth > '1024') {
+        localStorage.setItem('ordi', '0');
+    } else {
+        localStorage.setItem('ordi', '1');
+    };
+};
+if(!localStorage.getItem('tablet')) {
+    if(window.innerWidth <= '1024' && window.innerWidth > '768') {
+        localStorage.setItem('tablet', '0');
+    } else {
+        localStorage.setItem('tablet', '1');
+    };
+};
+if(!localStorage.getItem('mobile')) {
+    if(window.innerWidth <= '768') {
+        localStorage.setItem('mobile', '0');
+    } else {
+        localStorage.setItem('mobile', '1');
+    };
+};
 
 const btnMenu = document.querySelector('.btnMenu');
 const svgBarre = document.querySelector('.barre');
@@ -10,6 +31,30 @@ const FermerText = document.querySelector('.textfermer');
 const header = document.querySelector('header');
 const divLogo = document.queryCommandValue('.logo');
 const main = document.querySelector('main');
+
+window.addEventListener('resize', () => {
+    if(window.innerWidth > '1024' && JSON.parse(localStorage.getItem('ordi')) === 1) {
+        // localStorage.setItem('ordi', '0');
+        // localStorage.setItem('tablet', '1');
+        // localStorage.setItem('mobile', '1');
+
+        location.reload();
+    };
+    if(window.innerWidth <= '1024' && window.innerWidth > '768' && JSON.parse(localStorage.getItem('tablet')) === 1) {
+        // localStorage.setItem('ordi', '1');
+        // localStorage.setItem('tablet', '0');
+        // localStorage.setItem('mobile', '1');
+
+        location.reload();
+    };
+    if(window.innerWidth <= '768' && JSON.parse(localStorage.getItem('mobile')) === 1) {
+        // localStorage.setItem('ordi', '1');
+        // localStorage.setItem('tablet', '1');
+        // localStorage.setItem('mobile', '0');
+
+        location.reload();
+    };
+})
 
 if(window.innerWidth >= '769') {
     const cruxBtn = document.createElement('div');
@@ -98,13 +143,13 @@ if(window.innerWidth <= '768') {
     });
 }
 
-function nonScroll() {
-    scrollHaut = window.pageYOffset;
-    scrollGauche = window.pageXOffset;
-    window.onscroll = function() {
-        window.scrollTo(scrollGauche, scrollHaut);
-    };
-}
-function ouiScroll() {
-    window.onscroll = function() {};
-}
+// function nonScroll() {
+//     scrollHaut = window.pageYOffset;
+//     scrollGauche = window.pageXOffset;
+//     window.onscroll = function() {
+//         window.scrollTo(scrollGauche, scrollHaut);
+//     };
+// }
+// function ouiScroll() {
+//     window.onscroll = function() {};
+// }
