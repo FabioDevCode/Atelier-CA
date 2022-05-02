@@ -142,14 +142,3 @@ if(window.innerWidth <= '768') {
         }
     });
 }
-
-// function nonScroll() {
-//     scrollHaut = window.pageYOffset;
-//     scrollGauche = window.pageXOffset;
-//     window.onscroll = function() {
-//         window.scrollTo(scrollGauche, scrollHaut);
-//     };
-// }
-// function ouiScroll() {
-//     window.onscroll = function() {};
-// }
