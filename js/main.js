@@ -34,23 +34,23 @@ const main = document.querySelector('main');
 
 window.addEventListener('resize', () => {
     if(window.innerWidth > '1024' && JSON.parse(localStorage.getItem('ordi')) === 1) {
-        // localStorage.setItem('ordi', '0');
-        // localStorage.setItem('tablet', '1');
-        // localStorage.setItem('mobile', '1');
+        localStorage.setItem('ordi', '0');
+        localStorage.setItem('tablet', '1');
+        localStorage.setItem('mobile', '1');
 
         location.reload();
     };
     if(window.innerWidth <= '1024' && window.innerWidth > '768' && JSON.parse(localStorage.getItem('tablet')) === 1) {
-        // localStorage.setItem('ordi', '1');
-        // localStorage.setItem('tablet', '0');
-        // localStorage.setItem('mobile', '1');
+        localStorage.setItem('ordi', '1');
+        localStorage.setItem('tablet', '0');
+        localStorage.setItem('mobile', '1');
 
         location.reload();
     };
     if(window.innerWidth <= '768' && JSON.parse(localStorage.getItem('mobile')) === 1) {
-        // localStorage.setItem('ordi', '1');
-        // localStorage.setItem('tablet', '1');
-        // localStorage.setItem('mobile', '0');
+        localStorage.setItem('ordi', '1');
+        localStorage.setItem('tablet', '1');
+        localStorage.setItem('mobile', '0');
 
         location.reload();
     };
