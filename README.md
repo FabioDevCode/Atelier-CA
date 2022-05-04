@@ -1,6 +1,6 @@
 # Atelier-CA
-<div>
-  <img src="./assets/images/atelier-ca.jpg" alt="logo cosset architecture">
+<div align="center">
+  <img height="400px" src="./assets/images/atelier-ca.jpg" alt="logo cosset architecture">
 </div>
 
 #### Projet Client Personnel -  COSSET ARCHITECTE
