@@ -99,9 +99,7 @@ function saveChoice() {
 
     btnSourter.forEach(btn => {
         btn.addEventListener('click', function() {
-
             nbOfClick++
-            console.log(window.location);
 
             btnSourter.forEach(btn => {
                 btn.classList.remove('active');

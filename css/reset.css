@@ -13,6 +13,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Century Gothic Regular';
+    src: url('../assets/fonts/centurygothic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/centurygothic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *, ::after, ::before, button {
     box-sizing: border-box;
     padding: 0;
@@ -23,7 +31,7 @@ ul, ol, a {
     text-decoration: none;
     list-style: none;
     color: rgb(30,30,30);
-    font-family: 'PT Sans Narrow', Helvetica, sans-serif;
+    font-family: 'Century Gothic Regular', Helvetica, sans-serif;
 }
 
 body {
@@ -31,7 +39,7 @@ body {
     max-width: 1920px;
     min-width: 320px;
     margin: 0 auto;
-    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    font-family: 'Century Gothic Regular', Arial, Helvetica, sans-serif;
     color: rgb(30,30,30);
     overflow-x: hidden;
     overflow-y: scroll;

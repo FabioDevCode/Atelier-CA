@@ -44,7 +44,7 @@ function sourtOutProject() {
             this.classList.add('active');
 
             const btnSourted = (Array.from(this.classList)).slice(1)[0];
-            console.log(btnSourted);
+            // console.log(btnSourted);
 
             localStorage.setItem('btso', btnSourted);
 
