@@ -31,6 +31,9 @@ ul, ol, a {
     text-decoration: none;
     list-style: none;
     color: rgb(30,30,30);
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Century Gothic Regular', Helvetica, sans-serif;
 }
 
@@ -39,7 +42,7 @@ body {
     max-width: 1920px;
     min-width: 320px;
     margin: 0 auto;
-    font-family: 'Century Gothic Regular', Arial, Helvetica, sans-serif;
+    font-family: 'PT Sans Narrow', Helvetica, sans-serif;
     color: rgb(30,30,30);
     overflow-x: hidden;
     overflow-y: scroll;
@@ -118,7 +121,7 @@ header .reseaux {
     display: block;
     object-fit: cover;
     object-position: center;
-    width: 150px;
+    width: 200px;
 }
 
 nav {
