@@ -1,11 +1,7 @@
-<h1 align="center" > Atelier-CA </h1>
-
-<h3 align="center"> Projet Client Personnel -  COSSET ARCHITECTURE </h3>
-
-<br>
+<h1 align="center"> Atelier-CA </h1>
 
 <div align="center">
-  <img width="100%" src="./assets/images/atelier-ca.jpg" alt="logo cosset architecture">
+  <img width="320px" src="./assets/icons/logo_agence.png" alt="logo cosset architecture">
 </div>
 
-<br>
+<h3 align="center"> Projet Client Personnel -  COSSET ARCHITECTURE </h3>
