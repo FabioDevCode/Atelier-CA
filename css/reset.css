@@ -34,7 +34,7 @@ ul, ol, a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Century Gothic Regular', Helvetica, sans-serif;
+    font-family: 'PT Sans Narrow', Helvetica, sans-serif;
 }
 
 body {
@@ -42,7 +42,8 @@ body {
     max-width: 1920px;
     min-width: 320px;
     margin: 0 auto;
-    font-family: 'PT Sans Narrow', Helvetica, sans-serif;
+    font-family: 'Century Gothic Regular', Helvetica, sans-serif;
+    font-size: .9em;
     color: rgb(30,30,30);
     overflow-x: hidden;
     overflow-y: scroll;
